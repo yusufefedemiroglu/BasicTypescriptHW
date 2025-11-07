@@ -5,6 +5,8 @@ type ParseRouteParams<T extends string> =
     : T extends `${infer _Start}/:${infer Param}` 
       ? { [K in Param]: string } 
       : {};
+//bunu aisiz imkanı yok yapamayız diye düşünüyorum
+
 // ---- KOD BLOKU (DOKUNMAYIN) ----
 type Route1 = "/users/:id";
 type Route2 = "/posts/:postId/comments/:commentId";
