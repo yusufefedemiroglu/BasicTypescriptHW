@@ -1,5 +1,4 @@
 // SADECE BU SATIRI DEĞİŞTİRİN
-/*Flatten<T> Bpini tanımlayın. T bir dizi ise eleman Bpini (T[] -> T), değilse T'yi döndürmelidir. */
 type Flatten<T> = T extends (infer U)[] ? U : T;
 
 // ---- KOD BLOKU (DOKUNMAYIN) ----
